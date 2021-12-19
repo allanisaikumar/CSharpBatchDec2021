@@ -230,10 +230,200 @@ namespace FirstProgram
 
             */
 
+            // C# types
 
+            //int p1 = 1, p2 = 2;
+
+            //int res = Method1(ref p1, ref p2);
+
+            //Console.WriteLine("p1 - {0}, p2 - {1}, res = {2}", p1, p2, res);
+
+
+
+            //int notNullvariable;
+            //int? nullableVariable = 6;
+
+            //Console.WriteLine("Print - {0}", (int)nullableVariable);
+
+            //if (nullableVariable == null)
+            //{
+            //    notNullvariable = 0;
+            //}
+            //else
+            //{
+            //    notNullvariable = (int)nullableVariable;
+            //}
+
+            //Console.WriteLine("Value = {0}", notNullvariable);
+
+            //notNullvariable = nullableVariable ?? 0;
+
+
+            //Implicit Conversion
+
+            // float, double,long
+            // int can be assigned to all above ones.
+
+            //int x = 100;
+            //float y = x;
+
+            //Console.WriteLine(y);
+
+
+            //float f = 500.25F;
+
+            //int ff = (int)f;
+
+            //Console.WriteLine(ff);
+            //Console.WriteLine("Using Convert - {0}", Convert.ToInt32(f));
+
+            //byte bb = (byte)f;
+
+            //Console.WriteLine(bb);
+
+            ////Assignemnet 4 - try converstions int, long, float, double.
+
+            ////Comments, short cuts ctrl + k + c - comment,
+            ////ctrl + k + u - uncomments.
+
+            //var a = Method1(1, 2);
+
+
+            // Control Statements
+
+            //Conditional  if, switch-case.
+            //Looping  while, for,do-while.
+            //Jumping  break, continue,goto.
+
+
+            // if
+
+            //int zzz = 100;
+            //if (zzz == 100)
+            //{
+            //    //executes if condition is true
+            //    Console.WriteLine("inside if at 305");
+            //}
+
+            //if (zzz != 101)
+            //{
+            //    //executes if condition is true
+            //    Console.WriteLine("inside if at 311");
+            //}
+
+            ////if-else
+
+            //int balance = 1000;
+            //int draw = 500;
+
+            //if (draw <= balance)
+            //{
+            //    Console.WriteLine("Available for draw");
+            //}
+
+            //balance = 3000; draw = 2000;
+
+            //if (draw <= balance)
+            //{
+            //    Console.WriteLine("Available for draw");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not available for draw");
+            //}
+
+            //if (draw == balance)
+            //{
+            //    Console.WriteLine("Available for draw, but no more money");
+            //}
+            //else if (draw < balance)
+            //{
+            //    Console.WriteLine("Available for draw, still u have some money");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Not available for draw");
+            //}
+
+            //// nested if
+
+            //int g = 180, h = 250;
+            //string message = "";
+
+            //if (g >= h)
+            //{
+            //    if(g > h)
+            //    {
+            //        message = "g is greater than h";
+            //    }
+            //    else if(true)
+            //    {
+
+            //    }
+            //    else
+            //    {
+            //        message = "g is equal to h";
+            //    }
+
+            //    if (g > h)
+            //    {
+            //        message = "g is greater than h";
+            //    }
+            //    else
+            //    {
+            //        message = "g is equal to h";
+            //    }
+
+            //    if (g > h)
+            //    {
+            //        message = "g is greater than h";
+            //    }
+
+
+            //    else
+            //    {
+
+            //    }
+            //}
+            //else
+            //{
+            //    message = " g is less than h";
+            //}
+
+
+            // switch
+            int ii = 101;
+            switch (ii)
+            {
+                case 0: Console.WriteLine(0);break;
+                case 10: Console.WriteLine(10);break;
+                case 100: Console.WriteLine(100);break;
+                case 1000: Console.WriteLine(1000);break;
+                default : Console.WriteLine("Default");break;
+            }
 
 
             Console.ReadKey();
+        }
+
+        private static string Method2(string abc)
+        {
+            abc = "Text 2";
+            return abc;
+        }
+
+        /// <summary>
+        /// Method Name, method use
+        /// </summary>
+        /// <param name="q1"></param>
+        /// <param name="q2"></param>
+        /// <returns></returns>
+        private static int Method1(int q1, int q2)
+        {
+            Console.WriteLine("Before changing  | p1 - {0}, p2 - {1}", q1, q2);
+            q1 = 10; q2 = 20;
+            Console.WriteLine("After changing  | p1 - {0}, p2 - {1}", q1, q2);
+            return q1 + q2;
         }
     }
 }
