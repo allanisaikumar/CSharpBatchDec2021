@@ -9,7 +9,7 @@ namespace FirstProgram
     class Program
     {
         // Main method - entry point of the application.
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             // Write to Console
             Console.WriteLine("Welcome to C# Sessions");
@@ -99,78 +99,78 @@ namespace FirstProgram
 
             // Assignment Operator example
             // Single = is the assignment operator
-            int i = 10;
-            bool b = true;
+            //int i = 10;
+            //bool b = true;
 
-            int p = 1, q = 10;
-            int z = q; // q = 10
-
-
-            // For dividing 2 numbers we can use either
-            // % or / operators
-            int numerator = 14;
-            int denominator = 3;
-
-            // Arithmentic operator / returns quotient
-            int quotient = numerator / denominator;
-            Console.WriteLine("Quotient = {0}", quotient);
+            //int p = 1, q = 10;
+            //int z = q; // q = 10
 
 
-            // Arithmentic operator % returns remainder
-            int remainder = numerator % denominator;
-            Console.WriteLine("Remainder = {0}", remainder);
+            //// For dividing 2 numbers we can use either
+            //// % or / operators
+            //int numerator = 14;
+            //int denominator = 3;
 
-            int sum = numerator + denominator;
-            int substract = numerator - denominator;
-            int multiplication = numerator * denominator;
-
-            Console.WriteLine("Sum of {0} + {1} = {2}", numerator, denominator, sum);
-            //Console.WriteLine("Sum of {0} + {1} = {2}", numerator, denominator, numerator + denominator);
-
-            Console.WriteLine("Sum of {0} - {1} = {2}", numerator, denominator, substract);
-            Console.WriteLine("Sum of {0} * {1} = {2}", numerator, denominator, multiplication);
+            //// Arithmentic operator / returns quotient
+            //int quotient = numerator / denominator;
+            //Console.WriteLine("Quotient = {0}", quotient);
 
 
-            // To compare if 2 numbers are
-            // equal use comparison operator ==
-            int number = 10;
-            if (number == 10) // if(true)
-            {
-                Console.WriteLine("Number is equal to 10");
-            }
+            //// Arithmentic operator % returns remainder
+            //int remainder = numerator % denominator;
+            //Console.WriteLine("Remainder = {0}", remainder);
 
-            // To compare if 2 numbers are not
-            // equal use comparison operator !=
-            if (number != 5) // if(true)
-            {
-                Console.WriteLine("Number is not equal to 5");
-            }
+            //int sum = numerator + denominator;
+            //int substract = numerator - denominator;
+            //int multiplication = numerator * denominator;
 
-            // When && operator is used all the conditions must
-            // be true for the code in the "if" block to be executed
-            int number1 = 10;
-            int number2 = 20;
+            //Console.WriteLine("Sum of {0} + {1} = {2}", numerator, denominator, sum);
+            ////Console.WriteLine("Sum of {0} + {1} = {2}", numerator, denominator, numerator + denominator);
 
-            if (number1 == 10 && number2 == 20)
-            {
-                Console.WriteLine("Both conditions are true");
-            }
-
-            // When || operator is used the code in the "if" block
-            // is excuted if any one of the condition is true
-            number1 = 10;
-            number2 = 21;
-
-            if (number1 == 10 || number2 == 20)
-            {
-                Console.WriteLine("Atleast one of the condition is true");
-            }
+            //Console.WriteLine("Sum of {0} - {1} = {2}", numerator, denominator, substract);
+            //Console.WriteLine("Sum of {0} * {1} = {2}", numerator, denominator, multiplication);
 
 
-            if (number1 <= 15 && number2 >= 5)
-            {
-                Console.WriteLine("Both conditions are true");
-            }
+            //// To compare if 2 numbers are
+            //// equal use comparison operator ==
+            //int number = 10;
+            //if (number == 10) // if(true)
+            //{
+            //    Console.WriteLine("Number is equal to 10");
+            //}
+
+            //// To compare if 2 numbers are not
+            //// equal use comparison operator !=
+            //if (number != 5) // if(true)
+            //{
+            //    Console.WriteLine("Number is not equal to 5");
+            //}
+
+            //// When && operator is used all the conditions must
+            //// be true for the code in the "if" block to be executed
+            //int number1 = 10;
+            //int number2 = 20;
+
+            //if (number1 == 10 && number2 == 20)
+            //{
+            //    Console.WriteLine("Both conditions are true");
+            //}
+
+            //// When || operator is used the code in the "if" block
+            //// is excuted if any one of the condition is true
+            //number1 = 10;
+            //number2 = 21;
+
+            //if (number1 == 10 || number2 == 20)
+            //{
+            //    Console.WriteLine("Atleast one of the condition is true");
+            //}
+
+
+            //if (number1 <= 15 && number2 >= 5)
+            //{
+            //    Console.WriteLine("Both conditions are true");
+            //}
 
             //Assignment - 2 Pass or Fail based on 5 subject marks.
 
@@ -391,15 +391,95 @@ namespace FirstProgram
             //}
 
 
-            // switch
-            int ii = 101;
-            switch (ii)
+            //switch
+
+            //int ii = 101;
+            //switch (ii) //switch(101)
+            //{
+            //    case 0: Console.WriteLine(0); break;
+            //    case 10: Console.WriteLine(10); break;
+            //    case 100: Console.WriteLine(100); break;
+            //    case 1000: Console.WriteLine(1000); break;
+            //    default: Console.WriteLine("Default"); break;
+            //}
+
+
+            // while
+
+            //Console.WriteLine(1);
+            //Console.WriteLine(2);
+            //Console.WriteLine(3);
+            //Console.WriteLine(4);
+            //Console.WriteLine(5);
+
+
+            int iterator = 1, cnt = 5;
+            //Console.WriteLine("While example 1");
+            //while (iterator <= cnt)
+            //{
+            //    Console.WriteLine(iterator);
+            //    iterator++; // iterator = iterator + 1;
+            //}
+
+            //Console.WriteLine("While example 2");
+            //int ii = 1;
+            //while (ii <= 5)
+            //{
+            //    Console.WriteLine("C# while Loop: Iteration {0}", ii);
+            //    ii++;
+            //}
+
+            //Console.WriteLine("While example 3");
+            //int r = 1, s = 0; //1,2,3,4,5
+            //string userValueString = Console.ReadLine();
+            //int userValue = Convert.ToInt32(userValueString);
+            //Console.WriteLine("Sum = {0}", s);
+            //while (r <= userValue)
+            //{
+            //    s += r; // same as s = s+r;
+            //    Console.WriteLine("{0} + {1} = {0}", s, r);
+            //    r++;
+            //}
+            //Console.WriteLine("Sum = {0}", s);
+
+            //iterator = 6;
+
+            //while (iterator <= 5)
+            //{
+            //    Console.WriteLine(iterator);
+            //    iterator++;
+            //}
+
+            //Console.WriteLine("do-while example");
+            //iterator = 6;
+            //do
+            //{
+            //    Console.WriteLine(iterator);
+            //    iterator++;
+            //}
+            //while (iterator <= 5);
+
+            //for, foreach
+
+            //for (int i = 1, j = 10; i <= j; i++, j--)
+            //{
+            //    Console.WriteLine("i={0}, j={1}", i, j);
+            //}
+            // Assignment - 6  - try doing same example uisng while.
+
+            //foreach
+
+            int[] array = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            foreach (var item in array)
             {
-                case 0: Console.WriteLine(0);break;
-                case 10: Console.WriteLine(10);break;
-                case 100: Console.WriteLine(100);break;
-                case 1000: Console.WriteLine(1000);break;
-                default : Console.WriteLine("Default");break;
+                Console.WriteLine(item);
+            }
+
+            for (int i = 0; i <= array.Length - 1; i++)
+            //for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
             }
 
 
