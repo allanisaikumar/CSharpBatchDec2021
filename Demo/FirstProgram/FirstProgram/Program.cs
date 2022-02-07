@@ -469,18 +469,28 @@ namespace FirstProgram
 
             //foreach
 
-            int[] array = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int[] array = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-            foreach (var item in array)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in array)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            for (int i = 0; i <= array.Length - 1; i++)
-            //for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine(array[i]);
-            }
+            //for (int i = 0; i <= array.Length - 1; i++)
+            ////for (int i = 0; i < array.Length; i++)
+            //{
+            //    Console.WriteLine(array[i]);
+            //}
+
+
+
+
+
+
+
+
+
+
 
 
             Console.ReadKey();
