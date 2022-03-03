@@ -1,0 +1,43 @@
+﻿@model List<EntityFrameworkCRUDExample.Models.Employee>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>ASP.NET MVC - ADO.NET Entity Framework</title>
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h1>ASP.NET MVC - ADO.NET Entity Framework</h1>
+
+    <table border="1">
+
+        <tr>
+            <th>Emp ID</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            <th>Options</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.EmpID</td>
+                <td>@item.EmpName</td>
+                <td>@item.Salary</td>
+                <td>
+                    <a href="/Home/Details/@item.EmpID">Details</a>
+                    <a href="/Home/Edit/@item.EmpID">Edit</a>
+                    <a href="/Home/Delete/@item.EmpID">Delete</a>
+                </td>
+            </tr>
+        }
+
+    </table>
+
+    <a href="/Home/Create">New Employee</a>
+
+</body>
+</html>
+

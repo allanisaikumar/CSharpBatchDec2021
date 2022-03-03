@@ -1,0 +1,10 @@
+﻿body,input
+{
+    font-family: Tahoma;
+    font-size: 26px;
+}
+
+a:visited {
+    color: blue;
+}
+
